@@ -19,8 +19,8 @@ const Navbar = () => {
                 <li onClick={()=>setActive('kids')} className={active === 'kids' ? 'activeLink' : ''}><NavLink to = '/kids'>Kids</NavLink></li>
             </ul>
             <div className="nav_login_cart">
-                <button>Login</button>
-                <img src={cart_icon} alt="" />
+                <button><NavLink to = '/login'>Login</NavLink></button>
+                <NavLink to = '/cart'><img src={cart_icon} alt="" /></NavLink>
                 <div className="nav_cart_count">0</div>
             </div>
         </div>

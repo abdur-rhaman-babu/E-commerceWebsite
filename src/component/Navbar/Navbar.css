@@ -1,28 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root{
-    --red:#ff4757;
-    --black:#2f3542;
-    --light-color:#f1f2f6;
-    --box-shadow:box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    --border-radius:.5rem;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    text-decoration:none;
-    list-style:none;
-    font-family: "Poppins", sans-serif;
-}
-
-html{
-    font-size:62.5%;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-} */
-
 .navbar{
     display:flex;
     align-items:center;
@@ -45,6 +20,15 @@ html{
     cursor: pointer;
 }
 
+.nav_login_cart button{
+    margin-right:3rem;
+}
+
+.nav_login_cart button a{
+    color:var(--black);
+    font-size:2rem;
+}
+
 .navbar_logo p{
     font-size:3rem;
     font-weight:700;
@@ -59,15 +43,27 @@ html{
     gap:3rem;
 }
 
-.nav_menu li{
+.nav_menu li a{
     font-size:1.8rem;
     font-weight:400;
     color:var(--black);
+    position:relative;
 }
 
-.nav_menu li:hover{
-    color:var(--red);
-    transition:.3s all linear;
+.nav_menu li a::after{
+    content: '';
+    position:absolute;
+    left:0;
+    width:0;
+    display:block;
+    height:.25rem;
+    background:var(--red);
+    transition: width 0.3s ease;
+}
+
+.nav_menu li a:hover::after{
+    left:0;
+    width:100%;
 }
 
 .nav_menu li.activeLink{
@@ -78,9 +74,9 @@ html{
 }
 
 .nav_login_cart button{
-    border-radius:1rem;
+    border-radius:3rem;
     border:.1rem solid var(--black);
-    padding:.8rem 3rem;
+    padding:.6rem 3rem;
     cursor: pointer;
 }
 
