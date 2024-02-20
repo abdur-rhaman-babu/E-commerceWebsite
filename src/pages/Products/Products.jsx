@@ -1,4 +1,4 @@
-;
+
 const Products = () => {
     return (
         <div>

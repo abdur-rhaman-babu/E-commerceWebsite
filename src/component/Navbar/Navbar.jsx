@@ -2,6 +2,7 @@ import './Navbar.css'
 import logo from '../Assets/logo.png';
 import cart_icon from '../Assets/cart_icon.png'
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 const Navbar = () => {
     const [active, setActive] = useState('shop');
     return (
@@ -10,11 +11,12 @@ const Navbar = () => {
                 <img src={logo} alt="" />
                 <p><span>F</span>ashion</p>
             </div>
+            
             <ul className="nav_menu">
-                <li onClick={()=>setActive('shop')} className={active === 'shop' ? 'activeLink' : ''}>Shop</li>
-                <li onClick={()=>setActive('man')} className={active === 'man' ? 'activeLink' : ''}>Man</li>
-                <li onClick={()=>setActive('woman')} className={active === 'woman' ? 'activeLink' : ''}>Woman</li>
-                <li onClick={()=>setActive('kids')} className={active === 'kids' ? 'activeLink' : ''}>Kids</li>
+                <li onClick={()=>setActive('shop')} className={active === 'shop' ? 'activeLink' : ''}><NavLink to = '/'>Shop</NavLink></li>
+                <li onClick={()=>setActive('man')} className={active === 'man' ? 'activeLink' : ''}><NavLink to = '/mens'>Man</NavLink></li>
+                <li onClick={()=>setActive('woman')} className={active === 'woman' ? 'activeLink' : ''}><NavLink to = '/womens'>Women</NavLink></li>
+                <li onClick={()=>setActive('kids')} className={active === 'kids' ? 'activeLink' : ''}><NavLink to = '/kids'>Kids</NavLink></li>
             </ul>
             <div className="nav_login_cart">
                 <button>Login</button>
