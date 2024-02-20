@@ -9,6 +9,7 @@
     top:0;
     left:0;
     right:0;
+    z-index:10000;
 }
 
 .navbar_logo,
@@ -69,7 +70,7 @@
 .nav_menu li.activeLink{
     background:var(--red);
     color:#fff;
-    padding:.3rem .5rem;
+    padding:.3rem .8rem;
     border-radius:var(--border-radius);
 }
 

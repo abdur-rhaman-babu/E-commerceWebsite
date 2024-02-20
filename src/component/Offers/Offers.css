@@ -1,0 +1,30 @@
+.offer_container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#fff;
+    padding:5rem;
+    padding-bottom:0;
+}
+
+.offer_container h1{
+    font-size:4.5rem;
+    width:35rem;
+    font-weight:600;
+    line-height:7rem;
+}
+
+.offer_container p{
+    font-size:1.8rem;
+    font-weight:500;
+    margin-bottom:1.5rem;
+}
+
+.offer_container a {
+    color:#fff;
+    font-size:1.8rem;
+}
+
+.offer_container img{
+    transform: scaleX(-1);
+}

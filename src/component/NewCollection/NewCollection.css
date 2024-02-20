@@ -1,16 +1,16 @@
-.popular_items{
+
+.new_Collection{
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:2rem;
     margin-top:1rem;
 }
 
-.popular_container h1{
+.new_collections h1{
     text-align:center;
 }
 
-
-.popular_container hr{
+.new_collections hr{
     width:20rem;
     height:.3rem;
     background:var(--black);
