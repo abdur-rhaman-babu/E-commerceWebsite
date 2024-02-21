@@ -6,11 +6,13 @@ import ShopCategories from "./pages/ShopCategories/ShopCategories";
 import Products from "./pages/Products/Products";
 import LoginSignUp from "./pages/LoginSignUp/LoginSignUp";
 import Cart from "./pages/Cart/Cart";
+import Footer from "./component/Footer/Footer";
 const App = () => {
   return (
     <div>
       <BrowserRouter>
       <Navbar/>
+      <div style={{minHeight:'100vh'}}>
       <Routes>
         <Route path="/" element = {<Shop/>}/>
         <Route path="/mens" element={<ShopCategories category = 'men'/>}/>
@@ -22,6 +24,8 @@ const App = () => {
         <Route path="/LoginSignUp" element = {<LoginSignUp/>}/>
         <Route path="/cart" element = {<Cart/>}/>
       </Routes>
+      </div>
+      <Footer/>
       </BrowserRouter>
     </div>
   );
