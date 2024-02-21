@@ -1,0 +1,49 @@
+.newsletter{
+    text-align: center;
+    background:#fff;
+    padding:4rem;
+}
+
+.newsletter h1{
+    font-size:4.5rem;
+    font-weight:500;
+}
+
+.newsletter p{
+    font-size:2rem;
+    font-weight:500;
+    margin-bottom:1rem;
+}
+
+.subscriber{
+    display:flex;
+    align-items:center;
+    border:.1rem solid var(--black);
+    justify-content:space-between;
+    width:650px;
+    margin:0 auto;
+    border-radius:3rem;
+    padding-left:1rem;
+}
+
+.subscriber input{
+    width:68%;
+    padding:1rem;
+    border:none;
+    outline:none;
+    background:#fff;
+}
+
+::placeholder{
+    font-size:1.8rem;
+}
+
+.newsletter .global_btn {
+    border-radius:2rem;
+    background: var(--black);
+}
+
+.newsletter .global_btn a{
+    color:#fff;
+}
+
