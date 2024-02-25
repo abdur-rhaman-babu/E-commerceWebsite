@@ -10,6 +10,9 @@
 .footer_container{
     gap:2.5rem;
     flex-direction:column;
+    background: #fff;
+    background:#f4f1ea;
+    margin-top:4rem;
 }
 
 .footer_logo{

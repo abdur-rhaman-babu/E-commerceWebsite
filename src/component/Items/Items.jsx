@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import './Items.css'
 const Items = ({data}) => {
-    console.log(data)
     const {image, name, new_price, old_price} = data;
     return (
         <div className="popular_item">

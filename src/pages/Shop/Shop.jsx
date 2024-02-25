@@ -4,6 +4,7 @@ import Newsletter from "../../component/Newsletter/Newsletter";
 import Offers from "../../component/Offers/Offers";
 import Popular from "../../component/Popular/Popular";
 
+
 const Shop = () => {
     return (
         <div>
